@@ -7,6 +7,8 @@
   `git add <file>`(提交文件)</br>
   `git commit -m "日志"` </br>
   `git add -A` (提交所有) </br>
+  `git add .` (添加新文件和编辑过的文件不包括删除的文件) </br>
+  `git add -u` (添加编辑或者删除的文件，不包括新添加的文件) </br>
 
 ## 查看状态和不同点
   `git status` (查看状态)</br>
@@ -34,6 +36,7 @@
 
 ## 远程仓库
   `git remote add origin git@github.com:xujie1991618/learngit.git` (关联远程库)</br>
+  `git remote rm origin` (删除远程库)</br>
   `git push -u origin master` (第一次push)</br>
   由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 </br>
 
