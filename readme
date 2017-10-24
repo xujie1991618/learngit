@@ -10,4 +10,11 @@ git commit -m "日志"
 ## 查看状态和不同点
 git status
 git diff
- 
+
+## 日志和commit后版本回退
+git log
+git log --pretty=oneline
+git reset --hard HEAD^
+git reset --hard HEAD~100
+git reset --hard commit_id(版本号)
+git reflog 
