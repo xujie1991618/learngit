@@ -40,8 +40,10 @@
   git clone git@github.com:xujie1991618/learngit.git </br>
 
 ## 创建合并分支
-  git checkout -b dev </br>
+  git checkout -b <name> </br>
   git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</br>
-  git branch dev </br>
-  git checkout dev </br>
-  git branch 查看分支</br>
+  git branch <name> (创建分支)</br>
+  git checkout <name> (切换分支)</br>
+  git branch (查看分支)</br>
+  git merge <name> (合并分支)</br>
+  git branch -d <name> (删除分支)</br>
