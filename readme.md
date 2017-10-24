@@ -39,3 +39,9 @@
 ## 克隆
   git clone git@github.com:xujie1991618/learngit.git </br>
 
+## 创建合并分支
+  git checkout -b dev </br>
+  git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</br>
+  git branch dev </br>
+  git checkout dev </br>
+  git branch 查看分支</br>
