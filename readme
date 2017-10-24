@@ -18,3 +18,7 @@ git reset --hard HEAD^
 git reset --hard HEAD~100
 git reset --hard commit_id(版本号)
 git reflog 
+
+## 工作区和暂存区
+git add是将工作区提交到暂存区，暂存区分为stage和HEAD(master)；再使用git commit将stage提交到HEAD(master)中。
+cat readme查看内容
