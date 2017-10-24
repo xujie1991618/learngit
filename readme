@@ -21,4 +21,12 @@ git reflog
 
 ## 工作区和暂存区
 git add是将工作区提交到暂存区，暂存区分为stage和HEAD(master)；再使用git commit将stage提交到HEAD(master)中。
-cat readme查看内容
+cat file查看内容
+
+## 撤销修改
+git checkout -- file 
+git reset HEAD file 
+
+## 删除文件
+rm file
+git rm file
