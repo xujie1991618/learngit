@@ -33,8 +33,8 @@
   `git rm <file>`</br>
 
 ## 远程仓库
-  `git remote add origin git@github.com:xujie1991618/learngit.git` </br>
-  `git push -u origin master` </br>
+  `git remote add origin git@github.com:xujie1991618/learngit.git` (关联远程库)</br>
+  `git push -u origin master` (第一次push)</br>
   由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 </br>
 
 ## 克隆
@@ -51,14 +51,17 @@
   ·git branch -D <name>· (强制删除)</br>
   
 ## 解决冲突
-  `git log --graph --pretty=oneline --abbrev-commit` 分支合并图</br>
+  `git log --graph --pretty=oneline --abbrev-commit` (分支合并图)</br>
   
 ## 分支管理策略
   `git merge --no-ff -m "merge with no-ff" <name>` </br>
   因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。</br>
 ## bug分支
   `git stash` (储藏)</br>
-  `git stash list` (查看)</br>
+  `git stash list` (查看储藏)</br>
+  `git stash apply` (恢复)</br>
+  `git stash drop` (删除)</br>
+  `git stash pop` (恢复并删除)</br>
   一是用`git stash apply`恢复，但是恢复后，stash内容并不删除，你需要用`git stash drop`来删除；</br>
   另一种方式是用`git stash pop`，恢复的同时把stash内容也删了。</br>
 ## 多人协作
@@ -68,7 +71,7 @@
 ## 标签
   `git tag` (查看所有标签) </br>
   `git tag <name>` (建标签)</br>
-  `git tag <name> <commit_id> </br>
+  `git tag <name> <commit_id>` </br>
   `git show <tagname>` (查看标签内容)</br>
   `git tag -a <tagname> -m "说明" <commit_id>` (创建标签和说明)</br>
   `git tag -s v0.2 -m "signed version 0.2 released" <commit_id>` (使用PGP签名)</br>
