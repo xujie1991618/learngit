@@ -83,3 +83,5 @@
   `git push origin --tags` (推送所有标签)</br>
   如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除,然后，从远程删除。删除命令也是push，但是格式如下:
   `git push origin :refs/tags/<tagname>`
+## sourcetree使用
+  方便快捷工具
